@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layman>
+  <overlay contact="anton@ilin.dn.ua" name="bronislav" src="git://github.com/bronislav/overlays.git" status="unofficial" type="git">
+    <link>https://github.com/bronislav/overlays</link>
+    <description>My local gentoo overlay.</description>
+  </overlay>
+</layman>
