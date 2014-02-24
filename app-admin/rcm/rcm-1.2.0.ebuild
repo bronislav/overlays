@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2
+inherit autotools eutils git-2
 
 DESCRIPTION="Management suite for dotfiles"
 HOMEPAGE="https://github.com/thoughtbot/rcm"
@@ -15,6 +15,10 @@ KEYWORDS="~x86 ~amd64"
 
 EGIT_REPO_URI="https://github.com/thoughtbot/rcm.git"
 EGIT_COMMIT="v1.2.0"
+
+src_prepare() {
+  eautoreconf
+}
 
 src_configure() {
   econf
