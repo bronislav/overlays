@@ -16,6 +16,8 @@ KEYWORDS="~x86 ~amd64"
 EGIT_REPO_URI="https://github.com/thoughtbot/rcm.git"
 EGIT_COMMIT="v1.2.2"
 
+DEPEND="dev-ruby/mustache"
+
 src_prepare() {
   eautoreconf
 }
