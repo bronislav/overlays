@@ -20,6 +20,7 @@ DEPEND="dev-ruby/mustache"
 
 src_prepare() {
   eautoreconf
+  maint/autocontrib man/rcm.7.mustache
 }
 
 src_configure() {
