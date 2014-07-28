@@ -14,6 +14,10 @@ KEYWORDS="~amd64 ~x86"
 
 EGIT_REPO_URI="https://github.com/moka-project/faba-icon-theme.git"
 
+src_prepare () {
+	render-pngs.py
+}
+
 src_install () {
 	insinto /usr/share/icons
 	doins -r Faba || die
