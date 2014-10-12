@@ -6,17 +6,15 @@ EAPI=5
 
 inherit git-r3
 
-DESCRIPTION="Moka Icon Theme"
-HOMEPAGE="http://mokaproject/moka-icon-theme"
+DESCRIPTION="Faba Icon Theme extras"
+HOMEPAGE="http://mokaproject/faba-icon-theme"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-EGIT_REPO_URI="https://github.com/moka-project/moka-icon-theme.git"
-
-RDEPEND="x11-themes/faba-icon-theme"
+EGIT_REPO_URI="https://github.com/moka-project/faba-icon-theme-extras.git"
 
 src_install () {
 	insinto /usr/share/icons
-	doins -r Moka || die
+	doins -r Faba || die
 }
